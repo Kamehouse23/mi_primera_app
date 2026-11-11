@@ -31,6 +31,15 @@ class DetailView extends StatelessWidget {
               'Duración: ${curso.horas} horas',
               style: const TextStyle(fontSize: 16),
             ),
+            const SizedBox(height: 12),
+            Chip(
+              avatar: Icon(
+                curso.modalidad == 'Presencial' ? Icons.location_on : Icons.laptop,
+                size: 16,
+              ),
+              label: Text(curso.modalidad),
+              backgroundColor: Colors.blue.shade50,
+            ),
             const SizedBox(height: 20),
             const Text(
               'Descripción:',
