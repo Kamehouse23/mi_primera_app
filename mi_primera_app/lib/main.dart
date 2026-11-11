@@ -13,7 +13,7 @@ class MiApp extends StatelessWidget {
     return MaterialApp(
       title: 'Cursos ADSO',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
       ),
       home: const LoginView(),
     );
